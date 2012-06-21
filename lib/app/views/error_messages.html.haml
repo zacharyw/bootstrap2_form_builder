@@ -1,0 +1,9 @@
+- if target.errors.any?
+  %div.alert-message.block-message.error.fade.in
+    %a.close(href="#")×
+    %strong
+      =pluralize(target.errors.count, "error") + " prohibited this record from being saved:"
+    %ul
+    - target.errors.full_messages.each do |msg|
+      %li
+        =msg
