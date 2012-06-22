@@ -19,9 +19,7 @@ module BootstrapFormBuilder
 
       partial_location = BootstrapFormBuilder.error_partial || "bootstrap_form_builder/error_messages"
 
-      content_tag("div",
-                  render(partial_location, :target => target) +
-                      form_for(name, *(args << options.merge(:builder => BootstrapFormBuilder::FormBuilder)), &block))
+      render(partial_location, :target => target) + form_for(name, *(args << options.merge(:builder => BootstrapFormBuilder::FormBuilder)), &block)
     end
   end
 end
