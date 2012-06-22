@@ -30,7 +30,6 @@ For exmaple:
 
 This will generate HTML like this:
 
-<tt>
 <form accept-charset="UTF-8" action="/people" class="new_person" id="new_person" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="Edx7gjTOLinEOXqab7LweFhWlJh5uO6Js2l6exeCrwA="></div>
 	<div class="control-group">
 	    <label class="control-label required" for="person_name">Name</label>
@@ -51,7 +50,6 @@ This will generate HTML like this:
         </div>
     </div>
 </form>
-</tt>
 
 See how it automatically generates labels for your inputs? It also marks them as required if there is a
 presence validator for that attribute on the model.
