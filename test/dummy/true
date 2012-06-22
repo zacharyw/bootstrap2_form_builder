@@ -1,0 +1,2 @@
+   identical  config/initializers/bootstrap_form_builder.rb
+   identical  app/views/bootstrap_form_builder/_error_messages.html.erb
