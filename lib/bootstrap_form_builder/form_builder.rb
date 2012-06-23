@@ -32,13 +32,15 @@ on matching inputs.
           control_group_class = control_group_class + " error"
         end
 
-        @template.content_tag("div",
-      @template.content_tag("label",
+      @template.content_tag("div",
+        @template.content_tag("label",
                   custom_label,
                   :for => "#{@object_name}_#{label}",
                   :class => label_class)  +
-        @template.content_tag("div",
-                    super(label, *(args << options)) + (@template.content_tag("p", options[:help_block], :class => "help-block") if options[:help_block]),
+          @template.content_tag("div",
+                    super(label, *(args << options)) +
+                        (@template.content_tag("p", options[:help_block], :class => "help-block") if options[:help_block]) +
+                        (@template.content_tag("span", options[:help_inline], :class => "help-inline") if options[:help_inline]),
                     :class => "controls"),
                     :class => control_group_class)
       end

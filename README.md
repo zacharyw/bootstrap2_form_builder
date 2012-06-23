@@ -69,6 +69,7 @@ It also adds some options to all of the form helpers (form.text_field, form.text
 * :label - Lets you define a custom label
 * :label_class - Lets you define a custom class for your clabel
 * :help_block - A block of text that should appear below your input
+* :help_inline - A line of text that should appear next to your input
 
 For example:
 
@@ -76,6 +77,13 @@ For example:
 <%= form.text_field :name, :label => "Nickname", :label_class => "important", 
 :help_block => "What do your friends call you?" %>
 ```
+
+##Configuration
+
+When you run the install generator it will create an initializer at config/initializers/bootstrap_form_builder.rb
+
+Here you can customize certain aspects of the form builder. Check the generated file for the most up to date documentation
+and exmaple options.
 
 ## About
 
