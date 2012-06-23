@@ -1,6 +1,17 @@
 # BootstrapFormBuilder
 
+*Supports Bootstrap 2* 
+
+This gem adds a helper to all of your views called bootstrap_form_for, which generates a form for a given model object
+and fields with HTML and CSS markup that works with the [Twitter bootstrap](http://twitter.github.com/bootstrap/)  
+library.
+
 ## Install
+Add to your gemfile:
+
+```ruby
+gem "bootstrap2_form_builder"
+```
 
 After bundling the gem run 
 
@@ -85,10 +96,6 @@ When you run the install generator it will create an initializer at config/initi
 Here you can customize certain aspects of the form builder. Check the generated file for the most up to date documentation
 and exmaple options.
 
-## About
 
-This gem adds a helper to all of your views called bootstrap_form_for, which generates a form for a given model object
-and fields with HTML and CSS markup that works with the [Twitter bootstrap](http://twitter.github.com/bootstrap/)  
-library.
 
 This project uses MIT-LICENSE.
