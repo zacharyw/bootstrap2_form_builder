@@ -7,13 +7,13 @@ require "bootstrap_form_builder/version"
 Gem::Specification.new do |s|
   s.name        = "bootstrap_form_builder"
   s.version     = BootstrapFormBuilder::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of BootstrapFormBuilder."
-  s.description = "TODO: Description of BootstrapFormBuilder."
+  s.authors     = ["Zachary G. Wright"]
+  s.email       = ["zacharygwright@gmail.com"]
+  s.homepage    = "https://github.com/zacharyw/bootstrap_form_builder"
+  s.summary     = "Adds form builder and a helper method to ActionView that generates forms with bootstrap markup."
+  s.description = "Adds form builder and a helper method to ActionView that generates forms with bootstrap markup."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.1"
