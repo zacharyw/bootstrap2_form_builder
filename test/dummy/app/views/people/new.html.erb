@@ -1,4 +1,4 @@
-<%= bootstrap_form_for @person do |form| %>
+<%= bootstrap_form_for @person, :html => {:class => "form-vertical"} do |form| %>
 	<%= form.text_field :name %>
 	<%= form.text_field :email %>
 	<%= form.text_field :website %>
