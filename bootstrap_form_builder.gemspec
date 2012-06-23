@@ -5,7 +5,7 @@ require "bootstrap_form_builder/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "bootstrap_form_builder"
+  s.name        = "bootstrap2_form_builder"
   s.version     = BootstrapFormBuilder::VERSION
   s.authors     = ["Zachary G. Wright"]
   s.email       = ["zacharygwright@gmail.com"]
