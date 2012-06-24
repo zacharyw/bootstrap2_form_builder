@@ -1,7 +1,7 @@
 require 'rails'
-require 'bootstrap_form_builder/form_builder'
+require 'bootstrap2_form_builder/form_builder'
 
-module BootstrapFormBuilder
+module Bootstrap2FormBuilder
   mattr_reader :error_partial
   mattr_writer :error_partial
   @@error_partial = nil
@@ -25,7 +25,7 @@ module BootstrapFormBuilder
       end
 
       #Default form class to form-horizontal.
-      form_html = {:html => {:class => BootstrapFormBuilder.default_form_layout}}
+      form_html = {:html => {:class => Bootstrap2FormBuilder.default_form_layout}}
 
       #Work our default class back into the form options. Defer to whatever is passed in if present
 
@@ -35,13 +35,13 @@ module BootstrapFormBuilder
         end
       end
 
-      partial_location = BootstrapFormBuilder.error_partial || "bootstrap_form_builder/error_messages"
+      partial_location = Bootstrap2FormBuilder.error_partial || "bootstrap2_form_builder/error_messages"
 
-      render(partial_location, :target => target) + form_for(name, *(args << options.merge(:builder => BootstrapFormBuilder::FormBuilder)), &block)
+      render(partial_location, :target => target) + form_for(name, *(args << options.merge(:builder => Bootstrap2FormBuilder::FormBuilder)), &block)
     end
   end
 end
 
 ActiveSupport.on_load(:action_view) do
-  include BootstrapFormBuilder::BootstrapFormHelper
+  include Bootstrap2FormBuilder::BootstrapFormHelper
 end

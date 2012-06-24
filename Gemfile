@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-# Declare your gem's dependencies in bootstrap_form_builder.gemspec.
+# Declare your gem's dependencies in bootstrap2_form_builder.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 gemspec

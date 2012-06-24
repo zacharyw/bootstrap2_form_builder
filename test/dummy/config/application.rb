@@ -3,7 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 Bundler.require
-require "bootstrap_form_builder"
+require "bootstrap2_form_builder"
 
 module Dummy
   class Application < Rails::Application

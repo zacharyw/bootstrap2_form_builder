@@ -1,18 +1,18 @@
-# BootstrapFormBuilder
+# Bootstrap2FormBuilder
 
 ## Install
 
 After bundling the gem run 
 
 ```console
-rails g bootstrap_form_builder:install
+rails g bootstrap2_form_builder:install
 ```
 
 This will create a partial called error_messages that will contain formatted errors on the object the form is for. This
 generator also takes an option to use HAML (it uses erb by default):
 
 ```console
-rails g bootstrap_form_builder:install -t haml
+rails g bootstrap2_form_builder:install -t haml
 ```
 
 ## Usage
@@ -80,7 +80,7 @@ For example:
 
 ##Configuration
 
-When you run the install generator it will create an initializer at config/initializers/bootstrap_form_builder.rb
+When you run the install generator it will create an initializer at config/initializers/bootstrap2_form_builder.rb
 
 Here you can customize certain aspects of the form builder. Check the generated file for the most up to date documentation
 and exmaple options.

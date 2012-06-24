@@ -1,4 +1,4 @@
-module BootstrapFormBuilder
+module Bootstrap2FormBuilder
   class FormBuilder < ActionView::Helpers::FormBuilder
     #Replace form submit input with styled buttons
     def submit(label, *args)

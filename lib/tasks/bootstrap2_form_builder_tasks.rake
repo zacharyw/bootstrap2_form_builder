@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :bootstrap_form_builder do
+# task :bootstrap2_form_builder do
 #   # Task goes here
 # end
