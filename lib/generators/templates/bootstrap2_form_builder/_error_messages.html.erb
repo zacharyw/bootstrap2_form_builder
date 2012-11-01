@@ -7,10 +7,11 @@
             <%= "#{pluralize(target.errors.count, "error")} prohibited this record from being saved:" %>
         </strong>
         <ul>
-            <% targer.errors.full_messages.each do |msg| %>
+            <% target.errors.full_messages.each do |msg| %>
                 <li>
                     <%= msg %>
                 </li>
+            <% end %>
         </ul>
     </div>
 <% end %>
